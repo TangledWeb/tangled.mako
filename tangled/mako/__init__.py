@@ -69,9 +69,9 @@ class MakoRepresentation(TemplateMixin, HTMLRepresentation):
 
     key = 'mako'
 
-    def __init__(self, *args, template_name, **kwargs):
+    def __init__(self, *args, template, **kwargs):
         super().__init__(*args, **kwargs)
-        self.template_name = template_name
+        self.template_name = template
 
     @reify
     def lookup(self):
