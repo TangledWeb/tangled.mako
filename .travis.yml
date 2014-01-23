@@ -2,9 +2,8 @@ language: python
 python:
   - "3.3"
 install:
-  - pip install coverage
-  - pip install git+git://github.com/TangledWeb/tangled.git#egg=tangled
-  - pip install git+git://github.com/TangledWeb/tangled.web.git#egg=tangled.web
-  - pip install -e .
+  - pip install git+git://github.com/TangledWeb/tangled.git#egg=tangled[dev]
+  - pip install git+git://github.com/TangledWeb/tangled.web.git#egg=tangled.web[dev]
+  - pip install -e .[dev]
 script:
-  - python -m unittest discover tangled/mako
+  - tangled test --no-coverage
