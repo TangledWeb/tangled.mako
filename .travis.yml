@@ -4,6 +4,7 @@ python:
 install:
   - pip install coverage
   - pip install git+git://github.com/TangledWeb/tangled.git#egg=tangled
+  - pip install git+git://github.com/TangledWeb/tangled.web.git#egg=tangled.web
   - pip install -e .
 script:
   - tangled test
