@@ -12,8 +12,8 @@ from tangled.web.representations import HTMLRepresentation, TemplateMixin
 
 def include(app):
     app.add_subscriber(ApplicationCreated, app_created_subscriber)
-    app.register_content_type(
-        'text/html', 'tangled.mako:MakoRepresentation', replace=True)
+    app.register_representation_type(
+        'tangled.mako:MakoRepresentation', replace=True)
     app.add_representation_arg('text/html', 'template')
 
 
