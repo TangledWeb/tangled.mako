@@ -9,6 +9,7 @@ setup(
     url='http://tangledframework.org/',
     author='Wyatt Baldwin',
     author_email='self@wyattbaldwin.com',
+    include_package_data=True,
     packages=[
         'tangled',
         'tangled.mako',
