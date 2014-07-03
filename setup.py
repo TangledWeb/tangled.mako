@@ -18,7 +18,7 @@ setup(
     ],
     install_requires=[
         'tangled.web>=0.1a5',
-        'Mako>=0.9.1',
+        'Mako>=1.0',
     ],
     extras_require={
         'dev': [
