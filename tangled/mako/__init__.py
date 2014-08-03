@@ -3,7 +3,7 @@ import os
 from mako.lookup import TemplateLookup as BaseTemplateLookup
 
 from tangled.converters import as_list_of
-from tangled.decorators import reify
+from tangled.decorators import cached_property
 from tangled.settings import parse_settings
 from tangled.util import abs_path, asset_path
 from tangled.web.events import ApplicationCreated
@@ -73,14 +73,14 @@ class MakoRepresentation(TemplateMixin, HTMLRepresentation):
         super().__init__(*args, **kwargs)
         self.template_name = template
 
-    @reify
+    @cached_property
     def lookup(self):
         return self.app['mako.lookup']
 
-    @reify
+    @cached_property
     def template(self):
         return self.lookup.get_template(self.template_name)
 
-    @reify
+    @cached_property
     def content(self):
         return self.template.render(**self.template_context())
