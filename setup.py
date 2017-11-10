@@ -22,6 +22,7 @@ setup(
     ],
     extras_require={
         'dev': [
+            'tangled[dev]>=0.1a9',
             'tangled.web[dev]>=0.1a10',
         ],
     },
