@@ -1,11 +1,10 @@
 language: python
 python:
-  - "3.3"
+  - "3.4"
+  - "3.5"
+  - "3.6"
 install:
-  - pip install zc.buildout
-  - git clone git://github.com/TangledWeb/tangled ../tangled
-  - git clone git://github.com/TangledWeb/tangled.web ../tangled.web
-  - buildout
+  - pip install -e .[dev]
 script:
-  - ./bin/tangled test
-  - ./bin/sphinx-build -E docs docs/_build
+  - python -m unittest discover tangled/mako
+  - sphinx-build -E docs docs/_build
