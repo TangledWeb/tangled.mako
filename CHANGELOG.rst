@@ -1,7 +1,7 @@
-1.0a4 (unreleased)
+1.0a4 (2017-12-10)
 ==================
 
-- No changes yet
+Various package tweaks. No functional changes.
 
 
 0.1a3 (2015-03-07)
