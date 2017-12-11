@@ -17,13 +17,13 @@ setup(
         'tangled.mako.tests',
     ],
     install_requires=[
-        'tangled.web>=0.1a10',
+        'tangled.web>=1.0a12',
         'Mako>=1.0',
     ],
     extras_require={
         'dev': [
-            'tangled.web[dev]>=0.1a10',
             'tangled[dev]>=1.0a11',
+            'tangled.web[dev]>=1.0a12',
         ],
     },
     classifiers=[
