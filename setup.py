@@ -22,8 +22,8 @@ setup(
     ],
     extras_require={
         'dev': [
-            'tangled[dev]>=0.1a9',
             'tangled.web[dev]>=0.1a10',
+            'tangled[dev]>=1.0a11',
         ],
     },
     classifiers=[
