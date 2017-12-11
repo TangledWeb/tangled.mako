@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='tangled.mako',
-    version='1.0a5',
+    version='1.0a6.dev0',
     description='Tangled Mako integration',
     long_description=open('README.rst').read(),
     url='http://tangledframework.org/',
