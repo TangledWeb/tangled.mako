@@ -1,1 +1,3 @@
--e .[dev]
+-e ../tangled[dev]
+-e ../tangled.web
+-e .

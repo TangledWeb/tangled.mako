@@ -16,12 +16,6 @@ setup(
         'tangled.web>=1.0a12',
         'Mako>=1.0',
     ],
-    extras_require={
-        'dev': [
-            'tangled[dev]>=1.0a11',
-            'tangled.web[dev]>=1.0a12',
-        ],
-    },
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
