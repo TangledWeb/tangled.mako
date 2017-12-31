@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, PEP420PackageFinder
 
 
 setup(
@@ -6,16 +6,12 @@ setup(
     version='1.0a6.dev0',
     description='Tangled Mako integration',
     long_description=open('README.rst').read(),
-    url='http://tangledframework.org/',
+    url='https://tangledframework.org/',
     download_url='https://github.com/TangledWeb/tangled.mako/tags',
     author='Wyatt Baldwin',
     author_email='self@wyattbaldwin.com',
     include_package_data=True,
-    packages=[
-        'tangled',
-        'tangled.mako',
-        'tangled.mako.tests',
-    ],
+    packages=PEP420PackageFinder.find(include=['tangled*']),
     install_requires=[
         'tangled.web>=1.0a12',
         'Mako>=1.0',
